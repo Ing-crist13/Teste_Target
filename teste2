@@ -1,0 +1,15 @@
+# Programa para inverter os caracteres de uma string sem usar funções prontas
+
+def inverter_string(s):
+    tamanho = len(s)
+    string_invertida = [''] * tamanho
+
+    for i in range(tamanho):
+        string_invertida[i] = s[tamanho - 1 - i]
+
+    return ''.join(string_invertida)
+
+# Exemplo de uso
+entrada = input("Informe uma string: ")
+resultado = inverter_string(entrada)
+print("String invertida:", resultado)
